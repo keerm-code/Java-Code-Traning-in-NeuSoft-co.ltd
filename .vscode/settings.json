@@ -1,0 +1,14 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/home/tdt/install/openjfx-16_linux-x64_bin-sdk/javafx-sdk-16/lib/javafx.media.jar",
+        "/home/tdt/install/openjfx-16_linux-x64_bin-sdk/javafx-sdk-16/lib/javafx.web.jar",
+        "/home/tdt/install/openjfx-16_linux-x64_bin-sdk/javafx-sdk-16/lib/javafx.graphics.jar",
+        "/home/tdt/install/openjfx-16_linux-x64_bin-sdk/javafx-sdk-16/lib/javafx.swing.jar",
+        "/home/tdt/install/openjfx-16_linux-x64_bin-sdk/javafx-sdk-16/lib/javafx.fxml.jar",
+        "/home/tdt/install/openjfx-16_linux-x64_bin-sdk/javafx-sdk-16/lib/javafx.controls.jar",
+        "/home/tdt/install/openjfx-16_linux-x64_bin-sdk/javafx-sdk-16/lib/javafx.base.jar",
+        "/home/tdt/install/openjfx-16_linux-x64_bin-sdk/javafx-sdk-16/lib/javafx-swt.jar"
+    ]
+    
+}
