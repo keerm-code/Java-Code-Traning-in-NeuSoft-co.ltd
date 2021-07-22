@@ -1,0 +1,16 @@
+        if(login_em.getType().equals("worker"))
+        {
+            try {
+                Stage tempst=(Stage)
+                        sign_b.getScene().getWindow();
+                tempst.close();
+                Parent worker_page=FXMLLoader.load(Objects.requireNonNull(getClass()
+                        .getResource("worker_page.fxml")));
+                Stage worker_s=new Stage();
+                worker_s.setTitle("worker page");
+                worker_s.setScene(new Scene(worker_page));
+                worker_s.show();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }

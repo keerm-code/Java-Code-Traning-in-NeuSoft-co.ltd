@@ -1,4 +1,4 @@
-package com.neu.test.view;
+package com.neu.test.controller;
 
 import com.neu.test.pojo.impl.Employee;
 import com.neu.test.pojo.impl.User;
@@ -8,17 +8,22 @@ import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
 import java.util.List;
 import java.util.ListIterator;
+import java.util.Objects;
 import java.util.ResourceBundle;
 
 public class PatientPage implements Initializable {
@@ -42,6 +47,7 @@ public class PatientPage implements Initializable {
     public TableColumn<Object, Object> contract_c;
     public TableColumn<Object, Object> contractp_c;
     public TextField contractor_p_f;
+    public Button test;
     private ObservableList<User> table_empdao;
 
     @Override
@@ -68,7 +74,8 @@ public class PatientPage implements Initializable {
                                 User oldItem, User newItem) {
                             if(newItem!=null)
                             {
-                                newItem.setIs_select(true);
+                                newItem.setIs_select(!newItem.getIs_select());
+                                emp_t.refresh();
                             }
                         }
                     }
@@ -117,5 +124,16 @@ public class PatientPage implements Initializable {
             e.printStackTrace();
         }
         emp_t.refresh();
+    }
+
+    public void have_test(ActionEvent actionEvent) throws IOException {
+        User user=
+        emp_t.getSelectionModel().getSelectedItem();
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass()
+                .getResource("/com/neu/test/fxml/paper_page.fxml")));
+        Stage primaryStage = new Stage();
+        primaryStage.setTitle("paper_page");
+        primaryStage.setScene(new Scene(root));
+        primaryStage.show();
     }
 }

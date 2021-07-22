@@ -18,8 +18,8 @@ public class Ui extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass()
-                .getResource("login.fxml")));
-        primaryStage.setTitle("login");
+                .getResource("/com/neu/test/fxml/login.fxml")));
+       primaryStage.setTitle("login");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
         

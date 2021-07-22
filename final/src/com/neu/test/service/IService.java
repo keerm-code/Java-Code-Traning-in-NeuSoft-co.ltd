@@ -1,2 +1,4 @@
-package com.neu.test.service;public interface IService {
+package com.neu.test.service;
+
+public interface IService {
 }

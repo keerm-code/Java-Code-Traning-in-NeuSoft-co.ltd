@@ -1,2 +1,4 @@
-package com.neu.test.dao;public interface IUserdao {
+package com.neu.test.dao;
+
+public interface IUserdao {
 }

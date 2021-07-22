@@ -1,2 +1,4 @@
-package com.neu.bike.dao;public interface IBikedao {
+package com.neu.bike.dao;
+
+public interface IBikedao {
 }

@@ -1,9 +1,7 @@
-package com.neu.test.view;
+package com.neu.test.controller;
 
-import com.neu.test.dao.impl.Empdao;
 import com.neu.test.pojo.impl.Employee;
 import com.neu.test.service.impl.Service;
-import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;

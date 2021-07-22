@@ -1,7 +1,6 @@
-package com.neu.test.view;
+package com.neu.test.controller;
 
 import com.neu.test.pojo.impl.Employee;
-import com.neu.test.pojo.impl.User;
 import com.neu.test.service.impl.Service;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -60,7 +59,7 @@ public class Login implements Initializable {
                 sign_b.getScene().getWindow();
                 tempst.close();
                 Parent manager_page=FXMLLoader.load(Objects.requireNonNull(getClass()
-                        .getResource("manager_page.fxml")));
+                        .getResource("/com/neu/test/fxml/manager_page.fxml")));
                 Stage manager_s=new Stage();
                 manager_s.setTitle("manager page");
                 manager_s.setScene(new Scene(manager_page));
@@ -76,7 +75,7 @@ public class Login implements Initializable {
                         sign_b.getScene().getWindow();
                 tempst.close();
                 Parent doctor_page=FXMLLoader.load(Objects.requireNonNull(getClass()
-                        .getResource("doctor_page.fxml")));
+                        .getResource("/com/neu/test/fxml/doctor_page.fxml")));
                 Stage doctor_s=new Stage();
                 doctor_s.setTitle("doctor page");
                 doctor_s.setScene(new Scene(doctor_page));
@@ -92,7 +91,7 @@ public class Login implements Initializable {
                         sign_b.getScene().getWindow();
                 tempst.close();
                 Parent nurse_page=FXMLLoader.load(Objects.requireNonNull(getClass()
-                        .getResource("nurse_page.fxml")));
+                        .getResource("/com/neu/test/fxml/nurse_page.fxml")));
                 Stage nurse_s=new Stage();
                 nurse_s.setTitle("nurse page");
                 nurse_s.setScene(new Scene(nurse_page));
@@ -109,7 +108,7 @@ public class Login implements Initializable {
                         sign_b.getScene().getWindow();
                 tempst.close();
                 Parent worker_page=FXMLLoader.load(Objects.requireNonNull(getClass()
-                        .getResource("worker_page.fxml")));
+                        .getResource("/com/neu/test/fxml/worker_page.fxml")));
                 Stage worker_s=new Stage();
                 worker_s.setTitle("worker page");
                 worker_s.setScene(new Scene(worker_page));

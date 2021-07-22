@@ -1,4 +1,4 @@
-package com.neu.test.view;
+package com.neu.test.controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -32,7 +32,7 @@ public class ManagerPage implements Initializable {
                     more.getScene().getWindow();
             tempst.close();
             Parent emp_page= FXMLLoader.load(Objects.requireNonNull(getClass()
-                    .getResource("emp_page.fxml")));
+                    .getResource("/com/neu/test/fxml/emp_page.fxml")));
             Stage emp_s=new Stage();
             emp_s.setTitle("emp page");
             emp_s.setScene(new Scene(emp_page));
@@ -43,10 +43,35 @@ public class ManagerPage implements Initializable {
     }
 
     public void to_qust(ActionEvent actionEvent) {
-
+        try {
+            Stage tempst=(Stage)
+                    more.getScene().getWindow();
+            tempst.close();
+            Parent emp_page= FXMLLoader.load(Objects.requireNonNull(getClass()
+                    .getResource("/com/neu/test/fxml/emp_quest.fxml")));
+            Stage emp_s=new Stage();
+            emp_s.setTitle("question page");
+            emp_s.setScene(new Scene(emp_page));
+            emp_s.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public void to_paper(ActionEvent actionEvent) {
+        try {
+            Stage tempst=(Stage)
+                    more.getScene().getWindow();
+            tempst.close();
+            Parent emp_page= FXMLLoader.load(Objects.requireNonNull(getClass()
+                    .getResource("/com/neu/test/fxml/paper_page.fxml")));
+            Stage emp_s=new Stage();
+            emp_s.setTitle("paper_page");
+            emp_s.setScene(new Scene(emp_page));
+            emp_s.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public void to_building(ActionEvent actionEvent) {
@@ -58,7 +83,7 @@ public class ManagerPage implements Initializable {
                     more.getScene().getWindow();
             tempst.close();
             Parent emp_page= FXMLLoader.load(Objects.requireNonNull(getClass()
-                    .getResource("patient_page.fxml")));
+                    .getResource("/com/neu/test/fxml/patient_page.fxml")));
             Stage emp_s=new Stage();
             emp_s.setTitle("patient_page");
             emp_s.setScene(new Scene(emp_page));

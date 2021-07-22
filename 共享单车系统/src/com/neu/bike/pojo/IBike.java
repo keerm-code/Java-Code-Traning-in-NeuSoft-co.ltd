@@ -1,2 +1,4 @@
-package com.neu.bike.pojo;public interface IBike {
+package com.neu.bike.pojo;
+
+public interface IBike {
 }

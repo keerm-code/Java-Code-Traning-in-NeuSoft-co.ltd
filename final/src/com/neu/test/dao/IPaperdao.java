@@ -1,2 +1,4 @@
-package com.neu.test.dao;public interface IPaperdao {
+package com.neu.test.dao;
+
+public interface IPaperdao {
 }

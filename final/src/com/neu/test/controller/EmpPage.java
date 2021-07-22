@@ -1,4 +1,4 @@
-package com.neu.test.view;
+package com.neu.test.controller;
 
 import com.neu.test.pojo.impl.Employee;
 import com.neu.test.service.impl.Service;
@@ -10,8 +10,6 @@ import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.control.cell.TextFieldTableCell;
-import javafx.util.Callback;
 
 import java.io.IOException;
 import java.net.URL;
@@ -62,7 +60,8 @@ public class EmpPage implements Initializable {
                                 Employee oldItem, Employee newItem) {
                             if(newItem!=null)
                             {
-                                newItem.setIs_select(true);
+                                newItem.setIs_select(!newItem.getIs_select());
+                                emp_t.refresh();
                             }
                         }                        
                     }

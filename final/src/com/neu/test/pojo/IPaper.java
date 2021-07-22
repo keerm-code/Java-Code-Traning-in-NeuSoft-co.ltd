@@ -1,2 +1,4 @@
-package com.neu.test.pojo;public interface IPaper {
+package com.neu.test.pojo;
+
+public interface IPaper {
 }
