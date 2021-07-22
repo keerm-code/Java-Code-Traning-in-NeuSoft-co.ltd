@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="174.0" prefWidth="283.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.neu.test.view.Signup">
+   <children>
+      <Label layoutX="50.0" layoutY="75.0" prefHeight="28.0" prefWidth="92.0" text="username">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="121.0" prefHeight="21.0" prefWidth="85.0" text="keyword">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name" layoutX="138.0" layoutY="76.0" prefHeight="26.0" prefWidth="120.0" />
+      <TextField fx:id="key" layoutX="138.0" layoutY="118.0" prefHeight="26.0" prefWidth="120.0" />
+      <Text layoutX="50.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type" wrappingWidth="71.0">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Button fx:id="sign_b" layoutX="201.0" layoutY="208.0" mnemonicParsing="false" onAction="#sign" text="sign" />
+      <ChoiceBox fx:id="type" layoutX="73.0" layoutY="21.0" prefHeight="26.0" prefWidth="120.0" AnchorPane.bottomAnchor="187.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="160.0" />
+   </children>
+</AnchorPane>
